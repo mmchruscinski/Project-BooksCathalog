@@ -1,0 +1,13 @@
+The cathalog of books planned to read and read.
+Functionalities:
+    - adding books by:
+        > author
+        > title
+        > read (yes/no)
+        > audiobook/ normal
+        > date of reading
+        > genre
+    - changing the book's status
+    - deleting books
+    - adding cathegories
+    - sorting
