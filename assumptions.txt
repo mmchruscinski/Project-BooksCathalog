@@ -11,3 +11,4 @@ Functionalities:
     - deleting books
     - adding cathegories
     - sorting
+    - searching
