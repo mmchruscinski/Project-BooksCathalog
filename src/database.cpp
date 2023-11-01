@@ -8,3 +8,11 @@ bool Database::add(const Book &b) {
         return true;
     }
 }
+
+void Database::display() const {
+    cout << show();
+}
+
+string Database::show() const {
+    return "";
+}
