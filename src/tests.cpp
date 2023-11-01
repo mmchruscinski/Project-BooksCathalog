@@ -2,7 +2,11 @@
 #include "book.hpp"
 #include "database.hpp"
 
-TEST(CheckStructure, CanAddBook2db) {
+struct DatabaseTest : ::testing::Test{
+  Database db;
+};
+
+TEST_F(DatabaseTest, CanAddBook2db) {
   Book ksiazka_testowa {
       "Autor", 
       "Tytul", 
@@ -11,14 +15,14 @@ TEST(CheckStructure, CanAddBook2db) {
       Genre::Powiesc, 
       };
 
-  Database db;
   EXPECT_TRUE(db.add(ksiazka_testowa));
   EXPECT_FALSE(db.add(ksiazka_testowa));
 }
 
-TEST(DisplayDb, DisplayEmptyDb) {
-  Database db;
-  db.display();
+TEST_F(DatabaseTest, DisplayEmptyDb) {
+  auto content = db.show();
+  auto expected = "";
+  EXPECT_EQ(content, expected);
 }
 
 // TEST(DisplayDb, DisplayNotEmptyDb) {
