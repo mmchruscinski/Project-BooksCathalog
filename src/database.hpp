@@ -5,5 +5,7 @@ using namespace std;
 
 class Database {
 public:
-    void add(const Book &b);
+    bool add(const Book &b);
+private:
+    bool _isAdded = false;
 };

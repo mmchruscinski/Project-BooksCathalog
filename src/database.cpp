@@ -1,5 +1,10 @@
 #include "database.hpp"
 
-void Database::add(const Book &b) {
-
+bool Database::add(const Book &b) {
+    if (_isAdded) {
+        return false;
+    } else {
+        _isAdded = true;
+        return true;
+    }
 }

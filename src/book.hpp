@@ -27,6 +27,4 @@ public:
         int read,
         int listen,
         Genre genre);
-private:
-    Genre g;
 };

@@ -1,7 +1,9 @@
 #include <iostream>
+#include "book.hpp"
+#include "database.hpp"
 using namespace std;
 
 int main(){
-    cout << "Hello world!" << endl;
+    Database db;
     return 0;
 }
