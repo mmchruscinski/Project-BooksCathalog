@@ -1,12 +1,7 @@
 #include "database.hpp"
 
-bool Database::add(const Book &b) {
-    if (_isAdded) {
-        return false;
-    } else {
-        _isAdded = true;
-        return true;
-    }
+void Database::add(const Book &b) {
+    _books.push_back(b);
 }
 
 void Database::display() const {
@@ -14,5 +9,9 @@ void Database::display() const {
 }
 
 string Database::show() const {
-    return "";
+    string result = "";
+    for(auto && book : _books) {
+        result += book.show();
+    }
+    return result;
 }
