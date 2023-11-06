@@ -3,10 +3,11 @@ Functionalities:
     - adding books by:
         > author
         > title
-        > read (yes/no)
-        > audiobook/ normal
-        > date of reading
-        > genre
+        > read (integer)
+        > listened (integer)
+        > dates of reading
+        > genre - big
+        > genre - exact
     - changing the book's status
     - deleting books
     - adding cathegories
